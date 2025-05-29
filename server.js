@@ -67,6 +67,11 @@ app.get('/stream', (req, res) => {
     });
 });
 
+app.get('/ping', (req, res) => {
+    res.status(200).send('pong');
+});
+
+
 app.listen(PORT, () => {
     console.log(`✅ Webhook Server 運作中，監聽 PORT ${PORT}`);
 });
